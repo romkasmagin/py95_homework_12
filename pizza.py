@@ -1,3 +1,6 @@
+LARGE_PIZZA_SIZE = 30
+
+
 class Pizza:
     def __init__(self):
         self.size = None
@@ -71,7 +74,7 @@ class PizzaDirector:
 
 
 pizza = PizzaDirector()
-pizza.make_pizza(size=30,
+pizza.make_pizza(size=LARGE_PIZZA_SIZE,
                  cheese=True,
                  pepperoni=True,
                  mushrooms=True,

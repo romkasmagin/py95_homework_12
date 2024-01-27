@@ -1,7 +1,7 @@
 def fibonachi(max_value):
     first_elem = 0
     second_elem = 1
-    while first_elem < max_value:
+    while second_elem <= max_value:
         first_elem, second_elem = second_elem, first_elem + second_elem
         yield first_elem
 
@@ -18,7 +18,9 @@ def non_stop_numbers(count_of_numbers, max_value):
 
 
 if __name__ == "__main__":
-    max_value = input('Введите максимальное значение в ряду Фибоначи: ')
+    max_value = input('Введите значение в ряду Фибоначи, '
+                      'за которое мы не полезем в расчетах: ')
+
     try:
         max_value = int(max_value)
     except ValueError as e:

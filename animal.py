@@ -20,6 +20,8 @@ class Cat(Animal):
 class AnimalFactory:
     @staticmethod
     def create_animal(type_animal):
+        type_animal = type_animal.lower()
+
         if type_animal == 'dog':
             return Dog()
         elif type_animal == 'cat':
